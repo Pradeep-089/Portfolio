@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>    
+    <style>
+      .navbar-nav li{
+      margin-right:65px;
+      }
+    </style>
+    
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class ="navbar-brand" href="#" style="margin-right: 33%;">Pradeep</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#My_Content"  aria-controls="My_Content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="My_Content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../MINOR_PROJECT.html">Home</a>
+                </li>  
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="Project" role="button" data-bs-toggle="dropdown" >
+                      Outlines
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="Project">
+                      <li><a class="dropdown-item" href="#Introduction">Introduction</a></li>
+                      <li><a class="dropdown-item" href="#components">Components</a></li>
+                      <li><a class="dropdown-item" href="#Circuit_diagram">Circuit diagram</a></li>
+                      <li><a class="dropdown-item" href="#Working">Working Principle</a></l>
+                      <li><a class="dropdown-item" href="#Output">Output</a></l>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://www.google.com/">Something else here</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+    <div class="container">
+        <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <hr>
+            <h1 style="color:#524948">TV Remote Jammer Circuit</h1>
+            <hr>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10" id="Introduction">
+            <h2 style="color: black;">Introduction</h2>
+            <p>
+                A television remote uses light to carry signals from the remote to the television. The LED 
+on the remote emits invisible infrared light that correspond specific binary codes. These binary 
+codes contain commands like power on, volume up, or channel change.</p>
+<p> The idea behind the TV 
+remote control jammer is sending a constant IR pulse with the carrier frequency of the 
+transmitter and confusing the infrared receiver in TV. Hence, the result will be non-accepted 
+signal from the receiver and therefore no action will be taken. 
+            </p>
+            </div>
+            <div class="col-1"></div>
+            <!--Intro end here--> 
+            <div class="row" id="components">
+                <div class="col-1"></div>
+                <div class="col-11">
+                <a href="#" style ="text-decoration: none; color: black; "><h2 data-bs-toggle="collapse" data-bs-target="#Components" aria-expanded="false" aria-controls="Components">
+                    Components<img src="arrow.png">
+                </h2></a>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-8 collapse" id="Components">
+                    <ol>
+                      <li>BC547B:NPN transistor</li>
+                      <li>NE555 :555 Timer</li>
+                      <li>1N4148:Diode</li>
+                      <li>Resistor-470ohm, 1.85k ohm, 5.6ohm</li>
+                      <li>Capacitor-10nF</li>
+                      <li>DC voltage source-9V</li>
+                      <li>LED</li>
+                      <li>Connecting Wires</li>
+                    </ol>
+            </div>
+            <div class="col-3"></div>
+            </div>
+            <!--compponents end here-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10" id="Circuit_diagram">
+                    <p><h2>TV Remote Control Jammer Circuit Diagram</h2></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-sm-10 col-md-8">
+                    <img src="circuit.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <!--circuit diagram end here-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10" id="Working">
+                  <br><p> <h2> Working Principle</h2></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                   <p>
+                    Most of the TV remotes have 38KHz operating frequency. A flood of IR beams in the 
+                    same frequency can easily confuse the TV receiver and this is the operating principle of our 
+                    jammer. The circuit is nothing but an astable multivibrator based on NE555 TIMER IC.
+                    </p>
+                    <p> 
+                    The output of NE555 is amplified using a NPN transistor to drive the IR LED. Circuit can be adjusted 
+                    to exactly match the jammer’s frequency to the remote’s frequency. This adjustment is very 
+                    essential for effective jamming. Not only TV remotes, but any IR remotes operating in the 
+                    38KHz frequency region can be also jammed by using this circuit. In the circuit, TRIG and 
+                    THRS pins are shorted to allow the triggering after every timing cycle. These two pins are 
+                    grounded through the capacitor. RST pin is connected to supply to avoid sudden resets.
+                   </p>
+                </div>
+            </div>
+            <!--working principle end here-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10" id="Output">
+                    <p><h2>Simulation Output</h2></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10" id="Output">
+                    <h3>Output voltage across LED</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-sm-10 col-md-8">
+                    <img src="output1.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10" id="Output">
+                    <p><h3>Output of 555 Timer (as astable multivibrator)</h3></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-sm-10 col-md-8">
+                    <img src="output2.png" class="d-block w-100">
+                </div>
+            </div>
+            <!--simulation output end here--> 
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                  <br><p> <h2>Conclusion</h2></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                   <p>
+                    TV remote jammer circuits have both advantages and disadvantages, these can be considered as good and bad both depending on the signal intended to be jammed. Simple jammer circuits can be pretty easily constructed; however subtle circuit can be made for higher requirements.
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--contact-->
+      <div class="container" id="contact">
+        <h1 class="title text-center text-primary mt-4">CONTACT</h1>
+          <hr>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <p class="text-center">If you want to learn more about me or just want to say hi. Please email me and I'll reply back within 24 hours.I'd love to hear from you! You can reach me through any of the channels below.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center mt-2 mb-4">
+            <a style="margin-right:50px;" target="_blank"  href="https://www.google.com/gmail/"><img src="gmail.png"></i></a>
+            <a style="margin-right:50px;" target="_blank"  href="https://github.com/"><img src="github.png"></i></a>
+            <a style="margin-right:50px;" target="_blank"  href="https://twitter.com/?lang=en"><img src="twitter.png"></i></a>
+            <a style="margin-right:50px;" target="_blank"  href="https://www.linkedin.com/company/linkedin"><img src="linkedin.png"></i></a>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 bg-dark text-center text-white">
+            <h6 class="pt-2 pt-2">CopyRight@2021</h6>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
